@@ -67,6 +67,7 @@ h1 {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 3rem  hsl(var(--clr-neutral-dark-blue), .2);
+    scale: .6;
 }
 
 .bottom {
