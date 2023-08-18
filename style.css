@@ -19,8 +19,8 @@
     --fw-semibold: 700;
     --fw-black: 900;
 
-    --fs-200: 16px;
-    --fs-300: 1.25rem;
+    --fs-200: .75rem;
+    --fs-300: 1.5rem;
     --fs-400: 1.5rem;
     --fs-500: 2rem;
 }
@@ -55,11 +55,92 @@ body {
 }
 
 h1 {
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-black);
+    color: hsl(var(--clr-neutral-dark-blue));
+    margin-top: .8rem;
+}
+
+.order-summary {
+    background-color: white;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 35px;
+}
+
+.billing {
     font-weight: var(--fw-black);
     color: hsl(var(--clr-neutral-dark-blue));
 }
 
+.reward {
+    font-size: var(--fs-200);
+    line-height: 1.25rem;
+}
+
+.plan {
+    background-color: hsl(var(--clr-neutral-very-pale-blue));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    font-size: var(--fs-200);
+    padding-block: .85rem;
+}
+
+.plan a {
+    color:hsl(var(--clr-prim-bright-blue))
+}
+
+.plan a:hover {
+    color:hsl(var(--clr-neutral-destaurated-blue));
+    text-decoration: none;
+}
+
+.pricing {
+    transform: translate(-25px);
+}
+
+.proceed {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(var(--clr-prim-bright-blue));
+    color: hsl(0, 0%, 85%);
+    font-weight: var(--fw-black);
+    box-shadow: 0rem .8rem 2.5rem hsl(var(--clr-prim-bright-blue), .5);
+    cursor: pointer;
+}
+
+.proceed:hover {
+    background-color: hsl(var(--clr-prim-bright-blue), .7);
+}
+
+.cancel {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: var(--fw-black);
+    color: hsl(var(--clr-neutral-destaurated-blue));
+    margin-top: 1rem;
+}
+
+.cancel:hover {
+    color: hsl(var(--clr-neutral-dark-blue));
+}
+
+.bottom {
+    align-content: start;
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    margin-inline: 1.5rem;
+}
+/*
 .order-summary {
     height: 50rem;
     max-width: 32rem;
@@ -165,4 +246,4 @@ h1 {
 .cancel:hover {
     color: hsl(var(--clr-neutral-dark-blue));
 }
-
+ */
